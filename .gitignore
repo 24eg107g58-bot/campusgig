@@ -1,0 +1,86 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing and Coverage
+coverage/
+
+# Production Build Artifacts
+dist/
+build/
+*.jar
+*.war
+target/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Docker volumes / temp data
+mysql_data/
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Build output and dependencies
+node_modules/
+dist/
+target/
+build/
+
+# Local database data
+mysql_data/
+
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+target/
+build/
+mysql_data/
+*CAMPUSGIG.postman_environment.json
+.env
+.env.*
+node_modules/
+dist/
+target/
+build/
+mysql_data/
+*CAMPUSGIG.postman_environment.json
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+target/
+build/
+mysql_data/
+*CAMPUSGIG.postman_environment.json
