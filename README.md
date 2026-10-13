@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎓 CAMPUSGIG – Freelance Student Hub
 
 CAMPUSGIG is a complete, full-stack freelance platform tailored for university students and campus clients. It connects skilled student freelancers (developers, UI/UX designers, content writers, data analysts) with clients looking for affordable, high-quality project work.
@@ -206,3 +207,6 @@ Import both `CAMPUSGIG.postman_collection.json` and `CAMPUSGIG.postman_environme
 - Comprehensive DTO validation (`@Valid`, `@NotBlank`, `@Email`, `@Size`).
 - Prevention of client-side role tampering (roles assigned and validated server-side).
 - Business rule enforcement: students cannot accept their own proposals, duplicate proposals are rejected, clients cannot bid on projects.
+=======
+# campusgig
+>>>>>>> 7b4e2925c39a8f2149a9d348b1a876240f0f9358
