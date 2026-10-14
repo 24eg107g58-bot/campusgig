@@ -8,12 +8,32 @@ services:
     healthCheckPath: /actuator/health
     envVars:
       - key: SPRING_DATASOURCE_URL
-        sync: false
+        value: "jdbc:mysql://mysql-288083c4-anurag-58c3j.aivencloud.com:24223/defaultdb?sslMode=REQUIRED&serverTimezone=UTC"
       - key: SPRING_DATASOURCE_USERNAME
-        sync: false
+        value: avnadmin
       - key: SPRING_DATASOURCE_PASSWORD
         sync: false
       - key: CORS_ALLOWED_ORIGINS
-        sync: false
+        fromService:
+          type: web
+          name: campusgig-frontend
+          property: url
       - key: JWT_SECRET
         generateValue: true
+
+  - type: web
+    name: campusgig-frontend
+    runtime: static
+    plan: free
+    buildCommand: cd frontend && npm ci && npm run build
+    staticPublishPath: ./frontend/dist
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: campusgig-api
+          property: url
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
